@@ -1,0 +1,63 @@
+package com.example.nzta;
+
+public class QuestionLibrary
+{
+
+
+        private String mQuestions [] = {
+                "What is the maximum speed you may drive if you have a ‘space saver 'wheel fitted?",
+                "If you are a driver involved in a crash, what is the FIRST action you should take?",
+                "When you have a learner licence you must always drive with a supervisor. A supervisor is a person who has held a current and valid licence for a year.",
+                "What is the closest distance your vehicle may be parked to a vehicle entrance?"
+
+        };
+
+
+        private String mChoices [][] = {
+                {"80 km/h", "60 km/h", "90 km/h"},
+                {"Stop and check to see if anyone is hurt", "Drive past at 20 km/h until you pass the site of the crash", "Tell a police officer as soon as possible"},
+                {"True", "False"," Not Applicable"},
+                {"0.75 metres","0.5 metres","1.00 metre"}
+        };
+
+
+
+        private String mCorrectAnswers[] = {"80 km/h", "Stop and check to see if anyone is hurt", "False", "1.00 metre"};
+
+
+
+
+        public String getQuestion(int a) {
+            String question = mQuestions[a];
+            return question;
+        }
+
+
+        public String getChoice1(int a) {
+            String choice0 = mChoices[a][0];
+            return choice0;
+        }
+
+
+        public String getChoice2(int a) {
+            String choice1 = mChoices[a][1];
+            return choice1;
+        }
+
+        public String getChoice3(int a) {
+            String choice2 = mChoices[a][2];
+            return choice2;
+        }
+        public String getChoice4(int a) {
+            String choice3 = mChoices[a][3];
+            return choice3;
+        }
+
+        public String getCorrectAnswer(int a) {
+            String answer = mCorrectAnswers[a];
+            return answer;
+        }
+
+    }
+
+
