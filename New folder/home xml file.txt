@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <!--    Home menu card view-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hometitlecv"
+        android:layout_width="348dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/nzIv"
+                android:layout_width="400dp"
+                android:layout_height="59dp"
+                android:contentDescription="@string/welcome_to_nzta_driving_test"
+                android:src="@drawable/nz"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/SansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nzIv"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/welcome_to_nzta_driving_test"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tqcv"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/quizIv"
+                android:layout_width="78dp"
+                android:layout_height="59dp"
+                android:contentDescription="@string/take_quiz"
+                android:src="@drawable/tq"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/SansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quizIv"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/take_quiz"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<!--    Contact us card view-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contactuscv"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/cont_Iv"
+                android:layout_width="78dp"
+                android:layout_height="59dp"
+                android:contentDescription="@string/contact_us"
+                android:src="@drawable/cont"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/SansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cont_Iv"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/contact_us"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    About us card view-->
+    <!--    -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/aboutuscv"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/aboutusIv"
+                android:layout_width="78dp"
+                android:layout_height="59dp"
+                android:contentDescription="@string/about_us"
+                android:src="@drawable/aboutus"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/SansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutusIv"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/about_us"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<!--Developer card view-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/devcv"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/devIv"
+                android:layout_width="78dp"
+                android:layout_height="59dp"
+                android:contentDescription="@string/Developer"
+                android:src="@drawable/dev" />
+
+            <TextView
+                style="@style/SansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devIv"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/Developer"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
