@@ -1,0 +1,21 @@
+
+
+
+
+emailCv = (CardView) findViewById(R.id.emailcv);
+
+
+emailCv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent1 = new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:"+"NARA513@ess.ais.ac.nz"));
+                    intent1.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
+                    intent1.putExtra(Intent.EXTRA_TEXT, "Hi");
+                    startActivity(intent1);
+                }
+                catch (android.content.ActivityNotFoundException e) {
+                    Toast.makeText(Contactus.this, "There is no email app installed.",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
