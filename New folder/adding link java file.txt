@@ -1,0 +1,15 @@
+
+
+
+
+contactCv = (CardView) findViewById(R.id.nztacv);
+
+
+ contactCv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://www.nzta.govt.nz/");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
