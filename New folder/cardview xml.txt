@@ -1,0 +1,48 @@
+<androidx.cardview.widget.CardView
+        android:id="@+id/hometitlecv"
+        android:layout_width="348dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/nzIv"
+                android:layout_width="400dp"
+                android:layout_height="59dp"
+                android:contentDescription="@string/welcome_to_nzta_driving_test"
+                android:src="@drawable/nz"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/SansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nzIv"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/welcome_to_nzta_driving_test"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
